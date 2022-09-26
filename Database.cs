@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text.Json;
+using System.Collections.ObjectModel;
 
 // https://www.dotnetperls.com/serialize-list
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
@@ -16,6 +17,7 @@ namespace Lab1_2021
 
         SortedDictionary<int, Entry> entries;
         JsonSerializerOptions options;
+        ObservableCollection<Entry> observableEntries = new ObservableCollection<Entry>();
 
         public Database()
         {
@@ -133,9 +135,15 @@ namespace Lab1_2021
             if (jsonString.Length > 0)
             {
                 entries = JsonSerializer.Deserialize<SortedDictionary<int, Entry>>(jsonString);
+                observableEntries = new ObservableCollection<Entry>();
+                foreach (KeyValuePair<int, Entry> pair in entries)
+                {
+                    observableEntries.Add(pair.Value);
+                }
             } else { entries = new SortedDictionary<int, Entry>(); }
 
             return entries;
         }
+
     }
 }
