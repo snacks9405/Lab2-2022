@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lab1_2021
+namespace Lab2_2022
 {
     public class UserInterface : IUserInterface
     {

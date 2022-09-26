@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Lab1_2021
+namespace Lab2_2022
 {
     [Serializable()]
     public class Entry : IEquatable<Entry>

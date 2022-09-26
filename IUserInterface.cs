@@ -1,4 +1,4 @@
-﻿namespace Lab1_2021
+﻿namespace Lab2_2022
 {
     public interface IUserInterface
     {

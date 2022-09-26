@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Lab1_2021</RootNamespace>
+    <AssemblyName>Lab2-2022</AssemblyName>
   </PropertyGroup>
 
 </Project>

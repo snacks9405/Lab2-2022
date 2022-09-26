@@ -9,7 +9,7 @@ using System.Collections.ObjectModel;
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
 
 
-namespace Lab1_2021
+namespace Lab2_2022
 {
     public class Database : IDatabase
     {
